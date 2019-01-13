@@ -1,1 +1,1 @@
-# Fface-Recognition-with-VueJS-and-Kairos
+# Face-Recognition-with-VueJS-and-Kairos
