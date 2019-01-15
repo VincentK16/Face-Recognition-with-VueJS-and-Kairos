@@ -28,7 +28,7 @@ app.post('/upload', multipartMiddleware, function(req, res) {
     };
     console.log('sending to Kairos for training');
     kairos_client.enroll(params).then(function(result) {
-        console.log('Image Attributes : \n' + result.body );
+        console.log('Image Attributes : \n' + JSON.stringify(result.body));
         return res.json({'status' : true });
     }).catch(function(err) {
         console.log(err);
